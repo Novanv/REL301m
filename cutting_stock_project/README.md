@@ -106,37 +106,22 @@ Invalid actions are skipped or retried.
 pip install -r requirements.txt
 ```
 
-### Use heuristic
-```bash
-python heuristic_app/report_heuristic.py
-python heuristic_app/show_report_heuristic.py
-```
-
-### Train PPO Agent
-```bash
-python ppo_app/main.py
-```
 
 ### Train Q-learning Agent
 ```bash
-python qlearning_app/training/train_q_learning.py
+python training/train_q_learning.py
 ```
 
 
 ### Visualize Performance
 ```bash
-python show_report_5_method.py
+python evaluation/evaluate.py
 ```
 
 ---
 ## 📚Results
-![Alt text](results/comparison_5_method.png)
+![Alt text](evaluation_all_batches.png)
 
-For 2D material cutting problems, heuristics are still a reliable baseline in real production because of their stable performance and fast speed.
-
-However, Reinforcement Learning is a promising direction for automated intelligent systems, especially when the problem is large and complex.
-
-Combining heuristics + RL or fine-tuning policy after training is a potential trend.
 
 ---
 
